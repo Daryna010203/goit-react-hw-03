@@ -1,0 +1,12 @@
+.title {
+  color: rgb(3, 114, 3);
+  margin-bottom: 8px;
+}
+
+.text {
+  font-size: 12px;
+}
+
+.wrapper {
+  margin: 8px auto;
+}
