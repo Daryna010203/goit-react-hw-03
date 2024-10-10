@@ -16,7 +16,3 @@
   justify-content: space-around;
   width: calc((100% - 3 * 12px) / 4);
 }
-
-button {
-  border-radius: 4px;
-}

@@ -8,17 +8,12 @@ const ContactList = ({ userFilter, onDeleteProfile }) => {
       {userFilter.map(contacts => {
         return (
           <li key={contacts.id} className={css.contact}>
-            <Contact name={contacts.name} number={contacts.number} />
-            <div>
-              <button
-                type="button"
-                onClick={() => {
-                  onDeleteProfile(contacts.id);
-                }}
-              >
-                Delete
-              </button>
-            </div>
+            <Contact
+              name={contacts.name}
+              number={contacts.number}
+              id={contacts.id}
+              onDeleteProfile={onDeleteProfile}
+            />
           </li>
         );
       })}
